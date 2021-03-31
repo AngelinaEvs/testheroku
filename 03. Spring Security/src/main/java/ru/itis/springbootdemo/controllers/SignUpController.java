@@ -34,10 +34,4 @@ public class SignUpController {
         return "redirect:/signIn";
     }
 
-    @PermitAll
-    @GetMapping("/test")
-    public String text() {
-        //TODO
-        return "test";
-    }
 }

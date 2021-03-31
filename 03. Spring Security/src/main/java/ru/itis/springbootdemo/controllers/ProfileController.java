@@ -23,4 +23,11 @@ public class ProfileController {
         model.addAttribute("user", user);
         return "profile_page";
     }
+
+    @PreAuthorize("isAuthenticated()")
+    @GetMapping("/test")
+    public String text() {
+        //TODO
+        return "test";
+    }
 }
